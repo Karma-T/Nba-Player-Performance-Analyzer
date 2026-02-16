@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nba_dashboard_dataset (2)' inline='true' name='federated.1cc7toj1vblpvg124awq307kjubv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nba_dashboard_dataset' name='textscan.0psc9qx09left11dx2ahl1q9m32z'>
+            <connection class='textscan' directory='C:/Users/Karma/Desktop/NBAProject/data/processed' filename='nba_dashboard_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0psc9qx09left11dx2ahl1q9m32z' name='nba_dashboard_dataset.csv' table='[nba_dashboard_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Player' ordinal='0' />
+            <column datatype='integer' name='season_year' ordinal='1' />
+            <column datatype='real' name='Age' ordinal='2' />
+            <column datatype='real' name='MP' ordinal='3' />
+            <column datatype='real' name='USG%' ordinal='4' />
+            <column datatype='real' name='PTS' ordinal='5' />
+            <column datatype='real' name='TRB' ordinal='6' />
+            <column datatype='real' name='AST' ordinal='7' />
+            <column datatype='real' name='STL' ordinal='8' />
+            <column datatype='real' name='BLK' ordinal='9' />
+            <column datatype='real' name='FG%' ordinal='10' />
+            <column datatype='real' name='3P%' ordinal='11' />
+            <column datatype='real' name='FT%' ordinal='12' />
+            <column datatype='string' name='type' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season_year]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>season_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MP]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>MP</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USG%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[USG%]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>USG%</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PTS]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>PTS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TRB]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>TRB</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AST]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>AST</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[STL]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>STL</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLK</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BLK]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>BLK</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FG%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FG%]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>FG%</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3P%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3P%]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>3P%</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FT%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FT%]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>FT%</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[nba_dashboard_dataset.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='100*AVG([FG%])' datatype='real' name='[Calculation_1073434813763591]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100*AVG([FG%])' />
+      </column>
+      <column caption='100*AVG([3P%])' datatype='real' name='[Calculation_1073434813784072]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100*AVG([3P%])' />
+      </column>
+      <column caption='100*AVG([FT%])' datatype='real' name='[Calculation_1073434813796361]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100*AVG([FT%])' />
+      </column>
+      <column caption='Usg%' datatype='real' name='[USG%]' role='measure' type='quantitative' />
+      <column caption='nba_dashboard_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C]' role='measure' type='quantitative' />
+      <column caption='Season Year' datatype='integer' name='[season_year]' role='dimension' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Karma/AppData/Local/Temp/TableauTemp/#TableauTemp_1gi98ma12ocduc18yec9f0hy3ejx.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Player</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Player]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player</remote-alias>
+              <ordinal>0</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1412</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[season_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season_year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MP</remote-alias>
+              <ordinal>3</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>488</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>USG%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[USG%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>USG%</remote-alias>
+              <ordinal>4</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>368</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PTS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PTS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PTS</remote-alias>
+              <ordinal>5</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>547</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TRB</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TRB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TRB</remote-alias>
+              <ordinal>6</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>356</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AST</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AST]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AST</remote-alias>
+              <ordinal>7</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>312</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[STL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STL</remote-alias>
+              <ordinal>8</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>249</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BLK</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BLK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BLK</remote-alias>
+              <ordinal>9</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>270</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FG%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FG%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FG%</remote-alias>
+              <ordinal>10</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>722</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>3P%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[3P%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>3P%</remote-alias>
+              <ordinal>11</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>409</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FT%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FT%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FT%</remote-alias>
+              <ordinal>12</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>nba_dashboard_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#2b95bc'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#96c855'>
+              <bucket>&quot;Predicted&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='nba_dashboard_dataset.csv' id='nba_dashboard_dataset.csv_4CAD93EE3D1D4C2884416070FDD9823C'>
+            <properties context=''>
+              <relation connection='textscan.0psc9qx09left11dx2ahl1q9m32z' name='nba_dashboard_dataset.csv' table='[nba_dashboard_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Player' ordinal='0' />
+                  <column datatype='integer' name='season_year' ordinal='1' />
+                  <column datatype='real' name='Age' ordinal='2' />
+                  <column datatype='real' name='MP' ordinal='3' />
+                  <column datatype='real' name='USG%' ordinal='4' />
+                  <column datatype='real' name='PTS' ordinal='5' />
+                  <column datatype='real' name='TRB' ordinal='6' />
+                  <column datatype='real' name='AST' ordinal='7' />
+                  <column datatype='real' name='STL' ordinal='8' />
+                  <column datatype='real' name='BLK' ordinal='9' />
+                  <column datatype='real' name='FG%' ordinal='10' />
+                  <column datatype='real' name='3P%' ordinal='11' />
+                  <column datatype='real' name='FT%' ordinal='12' />
+                  <column datatype='string' name='type' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2026 vs 2027 Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_dashboard_dataset (2)' name='federated.1cc7toj1vblpvg124awq307kjubv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cc7toj1vblpvg124awq307kjubv'>
+            <column-instance column='[season_year]' derivation='None' name='[none:season_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Season Year' datatype='integer' name='[season_year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1cc7toj1vblpvg124awq307kjubv].[none:season_year:qk]' included-values='in-range'>
+            <min>2026</min>
+            <max>2027</max>
+          </filter>
+          <slices>
+            <column>[federated.1cc7toj1vblpvg124awq307kjubv].[none:season_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DB5D4FD0-B600-4702-B09D-BB71C8169810}' />
+    </worksheet>
+    <worksheet name='Top Predicted Players'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_dashboard_dataset (2)' name='federated.1cc7toj1vblpvg124awq307kjubv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cc7toj1vblpvg124awq307kjubv'>
+            <column datatype='real' name='[3P%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[AST]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[BLK]' role='measure' type='quantitative' />
+            <column caption='100*AVG([FG%])' datatype='real' name='[Calculation_1073434813763591]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100*AVG([FG%])' />
+            </column>
+            <column caption='100*AVG([3P%])' datatype='real' name='[Calculation_1073434813784072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100*AVG([3P%])' />
+            </column>
+            <column caption='100*AVG([FT%])' datatype='real' name='[Calculation_1073434813796361]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100*AVG([FT%])' />
+            </column>
+            <column datatype='real' name='[FG%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[FT%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[MP]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PTS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='real' name='[STL]' role='measure' type='quantitative' />
+            <column datatype='real' name='[TRB]' role='measure' type='quantitative' />
+            <column caption='Usg%' datatype='real' name='[USG%]' role='measure' type='quantitative' />
+            <column-instance column='[AST]' derivation='Avg' name='[avg:AST:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BLK]' derivation='Avg' name='[avg:BLK:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MP]' derivation='Avg' name='[avg:MP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PTS]' derivation='Avg' name='[avg:PTS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STL]' derivation='Avg' name='[avg:STL:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TRB]' derivation='Avg' name='[avg:TRB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[USG%]' derivation='Avg' name='[avg:USG%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='Min' name='[min:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1073434813763591]' derivation='User' name='[usr:Calculation_1073434813763591:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1073434813784072]' derivation='User' name='[usr:Calculation_1073434813784072:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1073434813796361]' derivation='User' name='[usr:Calculation_1073434813796361:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cc7toj1vblpvg124awq307kjubv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[min:Age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:MP:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:PTS:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:TRB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:AST:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:STL:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:BLK:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813763591:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813784072:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813796361:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:USG\%:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1cc7toj1vblpvg124awq307kjubv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[min:Age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:MP:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:PTS:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:TRB:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:AST:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:STL:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:BLK:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813763591:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813784072:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[usr:Calculation_1073434813796361:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1cc7toj1vblpvg124awq307kjubv].[avg:USG\%:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]'>
+            <groupfilter function='level-members' level='[none:Player:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]'>
+            <groupfilter function='level-members' level='[none:type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]' direction='DESC' measure-to-sort-by='[federated.1cc7toj1vblpvg124awq307kjubv].[avg:PTS:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]</column>
+            <column>[federated.1cc7toj1vblpvg124awq307kjubv].[:Measure Names]</column>
+            <column>[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]' value='Search Player'>
+              <formatted-text>
+                <run>Search Player</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk] / [federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk])</rows>
+        <cols>([federated.1cc7toj1vblpvg124awq307kjubv].[:Measure Names] * [federated.1cc7toj1vblpvg124awq307kjubv].[Multiple Values])</cols>
+      </table>
+      <simple-id uuid='{9371E7B1-6F35-404C-B137-D34227B0AD80}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='NBA 2026 vs 2027'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>NBA 2026 vs 2027 Player Projection Analysis
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='nba_dashboard_dataset (2)' name='federated.1cc7toj1vblpvg124awq307kjubv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1cc7toj1vblpvg124awq307kjubv'>
+        <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+        <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98128' id='12' param='vert' type-v2='layout-flow' w='98068' x='966' y='936'>
+            <zone fixed-size='75' h='9708' id='13' is-fixed='true' type-v2='title' w='98068' x='966' y='936'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='88420' id='7' param='horz' type-v2='layout-flow' w='98068' x='966' y='10644'>
+              <zone h='88420' id='5' type-v2='layout-basic' w='81522' x='966' y='10644'>
+                <zone h='88420' id='3' name='Top Predicted Players' w='81522' x='966' y='10644'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='137' h='88420' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16546' x='82488' y='10644'>
+                <zone h='6082' id='8' mode='dropdown' name='Top Predicted Players' param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]' type-v2='filter' w='16546' x='82488' y='10644'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='10410' id='9' name='Top Predicted Players' param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]' type-v2='filter' w='16546' x='82488' y='16726'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7720' id='10' name='Top Predicted Players' pane-specification-id='12' param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]' type-v2='color' w='16546' x='82488' y='27136'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0184DB14-8F32-40F6-B3CE-DBBAD34AC670}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Top Predicted Players'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:Player:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]' type='filter' />
+            <card pane-specification-id='12' param='[federated.1cc7toj1vblpvg124awq307kjubv].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{988A9379-9449-4418-8101-0C772CF79FC2}' />
+    </window>
+    <window class='worksheet' name='2026 vs 2027 Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{514AE709-EC5C-45EC-ABF1-9C34BB89B61F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='NBA 2026 vs 2027'>
+      <viewpoints>
+        <viewpoint name='Top Predicted Players' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B1B264C9-7B9A-4C50-9EE8-D221E5F9B715}' />
+    </window>
+  </windows>
+</workbook>
